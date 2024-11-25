@@ -1,4 +1,18 @@
-task.wait(15)
+print("bd init 1/7")
+task.wait(2)
+print("bd init 2/7")
+task.wait(2)
+print("bd init 3/7")
+task.wait(2)
+print("bd init 4/7")
+task.wait(2)
+print("bd init 5/7")
+task.wait(2)
+print("bd init 6/7")
+task.wait(2)
+print("bd init end/7")
+task.wait(2)
+
 local Webhook = "https://discord.com/api/webhooks/1310682233321033904/Otg78XJSdOTjFoeCNcaffDp2-e6kTvV4cbbe64DyWpQCF2XT2SDVHeZzBkEEaSaS9UQ_" -- your webhook
 _G.Discord_UserID = "1283831252352241686" -- ID To Ping on every execution, blank if no one wants to be pinged.
 
