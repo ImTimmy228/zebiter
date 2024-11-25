@@ -7,7 +7,7 @@ print("BD Started 1")
 -- Settings
 local controllerUsername = "uwutimmyreborn228" -- Replace with your username
 local altPlayer = game.Players.LocalPlayer
-
+print("BD Started 2")
 -- Function to handle commands
 local function onChatMessage(player, message)
     if player.Name == controllerUsername then
@@ -22,6 +22,7 @@ local function onChatMessage(player, message)
         end
     end
 end
-
+print("BD Started 3")
 -- Connect to chat messages
 game.Players.PlayerChatted:Connect(onChatMessage)
+print("BD Started 4")
