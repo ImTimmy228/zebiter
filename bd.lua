@@ -1,7 +1,10 @@
+print(1)
 local Players = game:GetService("Players")
 local LocalP = Players.LocalPlayer
 game.Loaded:Wait() -- Wait for core services
+print(2)
 LocalP.CharacterAdded:Wait() -- Wait for the character and essential components
+print(3)
 repeat
     task.wait()
 until LocalP.Character and LocalP.Character:FindFirstChild("HumanoidRootPart") and LocalP.Character:FindFirstChild("Humanoid")
