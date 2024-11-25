@@ -1,15 +1,11 @@
--- Wait for the game to fully load
-game.Loaded:Wait()
-print("Game core services are fully loaded.")
-
 local Players = game:GetService("Players")
 local LocalP = Players.LocalPlayer
--- Ensure the character is fully loaded
-LocalP.CharacterAdded:Wait()
+game.Loaded:Wait() -- Wait for core services
+LocalP.CharacterAdded:Wait() -- Wait for the character and essential components
 repeat
     task.wait()
 until LocalP.Character and LocalP.Character:FindFirstChild("HumanoidRootPart") and LocalP.Character:FindFirstChild("Humanoid")
-print("Character and assets are fully loaded.")
+print("Game is fully loaded, and the player is ready!")
 
 print("bd init 1/7")
 task.wait(1)
