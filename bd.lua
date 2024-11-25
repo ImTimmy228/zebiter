@@ -1,6 +1,6 @@
 -- for bd specially
-task.wait(5)
-print("BD Started")
+task.wait()
+print("BD Started 1")
 -- AltControlScript.lua
 -- This script should be executed by alts.
 
